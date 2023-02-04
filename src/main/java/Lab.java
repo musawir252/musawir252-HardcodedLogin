@@ -20,8 +20,15 @@ public class Lab {
                 return true;
             }
         }
-            if(username != "admin" && password != "qwerty"){
+        if(username == "user" && password == "password"){
+            return true;
+        }
+            if(username != "admin" || password != "qwerty"){
             return false;
+            }
+            
+            if(username != "user" || password != "password "){
+                return false;
             }
         
         return true;
